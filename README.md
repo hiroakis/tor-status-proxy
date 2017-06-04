@@ -24,16 +24,16 @@ Build and run. See Makefile.
 # Example
 
 ```
-$ curl http://xxxxxx/all
+$ curl https://tor-status-proxy.herokuapp.com/all
  => all nodes list
 
-$ curl http://xxxxxx/exit
+$ curl https://tor-status-proxy.herokuapp.com/exit
  => exit nodes list
 
-$ curl -XPOST -i -d "ip=::1" http://xxxxxx/istor
+$ curl -XPOST -i -d "ip=IPADDR" https://tor-status-proxy.herokuapp.com/istor
  => If your IP is tor node, the response code will be 200.
 
-$ curl -XPOST -i -d "ip=::1" http://xxxxxx/isexit
+$ curl -XPOST -i -d "ip=IPADDR" https://tor-status-proxy.herokuapp.com/isexit
  => If your IP is tor exit node, the response code will be 200.
 ```
 
