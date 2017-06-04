@@ -17,5 +17,5 @@ WORKDIR /app
 
 ADD ./tor-status-proxy /app/
 
-CMD ["tor-status-proxy"]
+CMD ["tor-status-proxy", "-i", "300"]
 
