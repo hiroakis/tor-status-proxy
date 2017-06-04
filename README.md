@@ -2,6 +2,10 @@
 
 It caches the exit node list and the all node list from https://torstatus.blutmagie.de/
 
+# Demo
+
+https://tor-status-proxy.herokuapp.com/
+
 # Installation
 
 Build and run. See Makefile.

@@ -77,16 +77,16 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 </pre>
 <h2>Example</h2>
 <pre>
-	$ curl http://xxxxxx/all
+	$ curl https://tor-status-proxy.herokuapp.com/all
 	 => all nodes list
 
-	$ curl http://xxxxxx/exit
+	$ curl https://tor-status-proxy.herokuapp.com/exit
 	 => exit nodes list
 
-	$ curl -XPOST -i -d "ip=%s" http://xxxxxx/istor
+	$ curl -XPOST -i -d "ip=%s" https://tor-status-proxy.herokuapp.com/istor
 	 => If your IP is tor node, the response code will be 200.
 
-	$ curl -XPOST -i -d "ip=%s" http://xxxxxx/isexit
+	$ curl -XPOST -i -d "ip=%s" https://tor-status-proxy.herokuapp.com/isexit
 	 => If your IP is exit node, the response code will be 200.
 </pre>
 </body>

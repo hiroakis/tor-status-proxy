@@ -11,6 +11,13 @@ build: lint
 run:
 	go run *.go
 
+heroku-create:
+	heroku create $(APP_NAME)
+
+heroku-deploy: build
+	heroku container:login
+	heroku container:push web
+
 clean:
 	rm -f $(APP_NAME)
 
