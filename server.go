@@ -94,6 +94,10 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	$ curl -XPOST -i -d "ip=%s" https://tor-status-proxy.herokuapp.com/isexit
 	 => If your IP is exit node, the response code will be 200.
 </pre>
+<h2>Source code</h2>
+<pre>
+	<a href="https://github.com/hiroakis/tor-status-proxy" target="_blank">https://github.com/hiroakis/tor-status-proxy</a>
+</pre>
 </body>
 </html>`, ip, isTor, isExit, status.AllNodeLastModified(), status.ExitNodeLastModified(), ip, ip)
 
