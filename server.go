@@ -130,9 +130,9 @@ func main() {
 		interval int
 	)
 
-	flag.StringVar(&host, "h", "0.0.0.0", "The listen IP. Default: 0.0.0.0")
-	flag.IntVar(&port, "p", p, "The listen port. Default: 9000")
-	flag.IntVar(&interval, "i", 3600, "The polling interval. Default: 3600sec(1 hour)")
+	flag.StringVar(&host, "h", "0.0.0.0", "The listen IP.")
+	flag.IntVar(&port, "p", p, "The listen port.")
+	flag.IntVar(&interval, "i", 3600, "The polling interval in sec.")
 	flag.Parse()
 
 	status = tor.NewStatus(interval)
